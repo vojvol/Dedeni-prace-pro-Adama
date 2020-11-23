@@ -1,9 +1,11 @@
-cls
 @echo off
-echo SNEKtech
+cls
+rem Made by Vojtech Voldrich
 echo Jak chcete pojmenovat zmenu?
-set/p "zmena="
+set/p "change="
+title ukladam
 git add .
-git commit -m "%zmena%"
+git commit -m "%change%"
 git push -u origin master
+title ulozeno
 pause
